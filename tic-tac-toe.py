@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import random as r
 def button(frame):          #Function to define a button
-    b=Button(frame,padx=1,bg="papaya whip",width=3,text="   ",font=('arial',60,'bold'),relief="sunken",bd=10)
+    b=Button(frame,padx=1,bg="indian red",width=3,text="   ",font=('arial',60,'bold'),relief="sunken",bd=10)
     return b
 def change_a():             #Function to change the operand for the next player
     global a
