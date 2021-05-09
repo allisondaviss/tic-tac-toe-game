@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import random as r
 def button(frame):          #Function to define a button
-    b=Button(frame,padx=1,bg="indian red",width=3,text="   ",font=('arial',60,'bold'),relief="sunken",bd=10)
+    b=Button(frame,padx=1,bg="indian red",width=3,text="   ",font=('helvetica',60,'bold'),relief="raised",bd=10)
     return b
 def change_a():             #Function to change the operand for the next player
     global a
@@ -47,6 +47,6 @@ for i in range(3):
                 b[i].append(button(root))
                 b[i][j].config(command= lambda row=i,col=j:click(row,col))
                 b[i][j].grid(row=i,column=j)
-label=Label(text=a+"'s Chance",font=('arial',20,'bold'))
+label=Label(text=a+"'s Chance",font=('TkIconFont',20,'bold'), relief="raised")
 label.grid(row=3,column=0,columnspan=3)
 root.mainloop()
