@@ -17,6 +17,9 @@ def reset():                #Resets the game
                 b[i][j]["text"]=" "
                 b[i][j]["state"]=NORMAL
     a=r.choice(['A','D'])
+    if messagebox.askretrycancel('Play again?','Press Cancel to close.') == False:
+        root.destroy()
+
 def check():                #Checks for victory or Draw
     for i in range(3):
             if(b[i][0]["text"]==b[i][1]["text"]==b[i][2]["text"]==a or b[0][i]["text"]==b[1][i]["text"]==b[2][i]["text"]==a):
