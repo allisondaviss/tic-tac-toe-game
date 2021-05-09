@@ -37,7 +37,7 @@ def click(row,col):
 root=Tk()                   #Window defined
 root.title("Tic-Tac-Toe")   #Title given
 a=r.choice(['A','D'])       #Two operators defined
-colour={'A':"deep sky blue",'D':"lawn green"}
+colour={'A':"steel blue",'D':"indian red"}
 b=[[],[],[]]
 for i in range(3):
         for j in range(3):
